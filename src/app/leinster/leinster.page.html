@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Leinster</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<img src = "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Leinster.
+svg">
+
+<!--Created two divs with iputs to enter weight and hieght-->
+<div class = "form">
+  <ion-item lines = "none">
+    <ion-input [(ngModel)] = 'weight' placeholder="Please enter your weight in kg"></ion-input>
+  </ion-item>
+
+  </div>
+
+  <div class = "form">
+    <ion-item lines = "none">
+      <ion-input [(ngModel)] = 'height' placeholder="Please enter your height in cm"></ion-input>
+    </ion-item>
+
+   </div>
+
+   <ion-button (click)="calculateBMI()"> Calculate !</ion-button>
+   
+  <br>
+
+  <!--Data binding in order to get the answer of BMI calculation-->
+   {{bmi}}
+
+
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>connacht</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<!--Image of Connacht flag-->
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Flag_of_
+Connacht.svg/300px-Flag_of_Connacht.svg.png">
+
+<h2>Student Data </h2>
+
+<!--Using ngFor to display array of students -->
+<!--Using string interpulation-->
+<ol>
+  <li *ngFor="let student of students">{{student.id}},{{student.name}},{{student.address}}</li>
+</ol>
+
+
+<h2>Weather For Galway</h2>
+
+
+</ion-content>

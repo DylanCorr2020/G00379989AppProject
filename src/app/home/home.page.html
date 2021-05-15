@@ -1,20 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Provinces of Ireland
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!--Cordova Plugins-->
+  <h3>FlashLight</h3>
+
+<!--button for flashlight -->
+<ion-button (click) = "flashLight()"> FlashLight </ion-button>
+
+<hr>
+
+
+<h3>Get Location</h3>
+
+<!--button to find current location -->
+<ion-button (click)= "GPS()"> Get Location </ion-button>
+
+<br>
+
+<!--Data Binding for current location-->
+{{lat}}, {{long}}
+
+<!--Unordered list of the provinces and roter links to thier own pages -->
+<ul>
+  <li [routerLink] = "['/ulster']" routerDirection = "foward"> Ulster</li>
+  <li [routerLink] = "['/munster']" routerDirection = "foward"> Munster</li>
+  <li [routerLink] = "['/connacht']" routerDirection = "foward"> Connacht</li>
+  <li [routerLink] = "['/leinster']" routerDirection = "foward"> Leinster</li>
+
+</ul>
+
 </ion-content>
